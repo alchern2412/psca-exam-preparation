@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>08-01 formparameter</title>
+</head>
+
+<body>
+    <h1>07-01</h1>
+    <form action="formparameter" method="POST">
+        <div class="row">
+            <label>text</label>
+            <input type="text" name="text">
+        </div>
+        <div class="row">
+            <label>number</label>
+            <input type="number" name="number">
+        </div>
+        <div class="row">
+            <label>date</label>
+            <input type="date" name="date">
+        </div>
+        <div class="row">
+            <label>checkbox</label>
+            <p><input type="checkbox" name="check" value="check1">check1</input></p>
+            <p><input type="checkbox" name="check" value="check2">check2</input></p>
+            <p><input type="checkbox" name="check" value="check3">check3</input></p>
+
+        </div>
+        <div class="row">
+            <label>radio</label>
+            <p><input type="radio" name="radio" value="first">first</input></p>
+            <p><input type="radio" name="radio" value="second">second</input></p>
+            <p><input type="radio" name="radio" value="third">third</input></p>
+        </div>
+        <div class="row">
+            <textarea name="textarea"></textarea>
+        </div>
+        <div class="row">
+            <input type="submit" value="SEND">
+        </div>
+    </form>
+</body>
+
+</html>
