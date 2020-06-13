@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>07-01</title>
+        <link rel="stylesheet" href="css/07-01.css">
+        <script src="js/07-01.js"></script>
+
+    </head>
+
+    <body>
+        <h1>07-01</h1>
+        <h2 class="danger">Check CSS</h2>
+        <h2 id="result" class="danger">Проверка JS: </h2>
+        <a href="doc/07-01.docx">07-01.docx file download</a>
+        <div>
+            <video width="300" height="200" controls src="mp4/07-01.mp4"></video>
+        </div>
+        <img width="300" height="200" src="png/07-01.png">
+        
+        <br/>
+
+        <button onclick="getJson()">Get JSON</button>
+        <button onclick="getXml()">Get XML</button>
+
+        <br/>
+        <div id="json0701"></div>
+        <br/><br/>
+        <div id="xml0701"></div>
+
+        <form action="/" method="POST">
+            <input type="submit" value="subgit post">
+        </form>
+        <script>
+            result.innerHTML += sum(2,3);
+            json0701.innerHTML = '';
+            xml0701.innerHTML = '';
+            function getJson() {
+                fetch('http://localhost:3000/json/07-01.json')
+                    .then(res => res.json())
+                    .then(json => json0701.innerHTML += JSON.stringify(json));
+            }
+
+            function getXml() {
+                fetch('http://localhost:3000/xml/07-01.xml')
+                    .then(res => res.text())
+                    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+                    .then(data => {
+                        console.log(data);
+                        xml0701.innerHTML += new XMLSerializer().serializeToString(data);
+                    });
+            }
+        </script>
+    </body>
+</html>
