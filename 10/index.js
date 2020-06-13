@@ -1,3 +1,6 @@
+// 10.	Разработка HTTP-сервера в Node.js. Обработка параметров POST-запроса. 
+// Пример. Тестирование с помощью браузера (<form>) и POSTMAN.
+
 var http = require('http');
 let url = require('url');
 
