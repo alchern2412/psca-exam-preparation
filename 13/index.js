@@ -32,7 +32,7 @@ http.createServer(function (req, res) {
         });
     }
  
-}).listen(3333);
+}).listen(3000);
 console.log("Server running at http://localhost:3000/");
 
 
