@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <button onclick="fetch_request()">Fetch</button>
+    <button onclick="xhr_request()">XHR</button>
+
+
+    <script>
+        const URI = `http://localhost:3000/test/uri?test=3`
+
+        const fetch_request = () => {
+            fetch(URI)
+                .then(response => response.text())
+                .then((response) => {
+                    alert('Fetch result:' + response)
+                })
+                .catch(err => console.log(err))
+        }
+
+        const xhr_request = () => {
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', URI, true);
+
+            xhr.send(); // (1)
+
+            xhr.onreadystatechange = function () { // (3)
+                if (xhr.readyState != 4) return;
+
+                if (xhr.status != 200) {
+                    alert(xhr.status + ': ' + xhr.statusText);
+                } else {
+                    alert('XHR result:' + xhr.responseText);
+                }
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
