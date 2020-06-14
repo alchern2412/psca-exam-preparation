@@ -1,0 +1,7 @@
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\bin\Debug\task44.exe.config
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\bin\Debug\task44.exe
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\bin\Debug\task44.pdb
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\obj\Debug\task44.csprojAssemblyReference.cache
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\obj\Debug\task44.csproj.CoreCompileInputs.cache
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\obj\Debug\task44.exe
+C:\Users\Alexey Chernyavsky\Downloads\Univer\6SEMESTR\EXAMS\pskp\tasks\44\task44\task44\obj\Debug\task44.pdb
