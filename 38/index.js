@@ -1,10 +1,8 @@
-// 35.	Пакет Express. Основные принципы работы. Обработка body-параметров POST-запроса. Пример (POSTMAN).
+// 38.	Пакет Express. Основные принципы работы. download/attachment файлы GET-запроса. Пример (браузер).
 
 // localhost:3000/
-// x-www-form-urlencoded....
 
 const app = require('express')()
-const bodyparser = require('body-parser')
 
 const PORT = process.env.PORT || 3000
 
